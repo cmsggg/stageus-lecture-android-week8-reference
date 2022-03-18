@@ -38,8 +38,10 @@
 
 ## 로그인 API 
 
-#### Endpoint - /account/login
-#### Method - GET
+#### Endpoint 
+- /account/login
+#### Method 
+- GET
 #### Reqeust
 ```json
 {
@@ -51,7 +53,7 @@
 ```json
 {
 	"message": String
-	"success": Boolean	
+	"success": Boolean
 }
 ```
 
@@ -100,14 +102,14 @@
 ```json
 {
 	"message": String
-	"success": Boolean	
+	"success": Boolean
 	"data": List [
 		{
 			"menu_name": String,
 			"menu_price:" Int,
 			"menu_image:" String
 		}
-	]            
+	]
 }
 ```
 #### Conditions
@@ -138,7 +140,7 @@
 ```json
 {
 	"message": String
-	"success": Boolean	
+	"success": Boolean
 }
 ```
 
@@ -155,10 +157,10 @@
 }
 ```
 #### Response
-```json
+```object
 {
 	"message": String
-	"success": Boolean	
+	"success": Boolean
 	"data": List [
 		{
 			"name": String,
