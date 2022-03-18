@@ -14,7 +14,7 @@
 #### Method 
 - POST  
 #### Reqeust  
-```data
+```json
 {
 	"id": String,
 	"pw": String,
