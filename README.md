@@ -14,7 +14,7 @@
 #### Method 
 - POST  
 #### Reqeust  
-```xml
+```data
 {
 	"id": String,
 	"pw": String,
