@@ -9,8 +9,10 @@ Port - 3000
 
 ## 회원가입 API
 
-### Endpoint - /account  
-### Method - POST  
+### Endpoint 
+- /account  
+### Method 
+- POST  
 ### Reqeust  
 ```json
 {
