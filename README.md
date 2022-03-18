@@ -81,7 +81,7 @@
 	- lang은 "kr" 혹은 "en"을 보낼 것
 
 
-== 메뉴 가져오기 API ==
+## 메뉴 가져오기 API 
 
 - endpoint : /category/menu
 - method : GET
@@ -110,7 +110,7 @@
 	- lang은 "kr" 혹은 "en"을 보낼 것
 
 
-== 주문 내용 넣기 API ==
+## 주문 내용 넣기 API 
 
 - Endpoint : /order
 - Method : POST
@@ -138,7 +138,7 @@
 - Conditions
 	- total_price는 0일 수 없음
 
-== 주문 기록 가져오기 API ==
+## 주문 기록 가져오기 API 
 
 - Endpoint : /order
 - Method : GET
