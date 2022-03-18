@@ -140,17 +140,15 @@
 
 == 주문 기록 가져오기 API ==
 
-#### Endpoint 
-- /order
-#### Method 
-- GET
-#### Reqeust
+- Endpoint : /order
+- Method : GET
+- Reqeust
 ```json
 {
 	"id": String
 }
 ```
-#### Response
+- Response
 ```json
 {
 	"message": String
