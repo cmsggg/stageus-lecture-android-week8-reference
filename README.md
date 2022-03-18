@@ -36,38 +36,36 @@
 
 ## 로그인 API 
 
-#### Endpoint 
-- /account/login
-#### Method 
-- GET
-#### Reqeust
+- Endpoint : /account/login
+- Method : GET
+- Reqeust
 ```json
 {
 	"id": string,
 	"pw": string
 }
 ```
-#### Response
+- Response
 ```json
 {
 	"message": String
 	"success": Boolean
 }
 ```
+- Conditions
+	- login 성공시 success는 true, 실패시 false
 
 ## 카테고리 가져오기 API
 
-#### endpoint 
-- /category
-#### method 
-- GET
-#### Reqeust
+- endpoint : /category
+- method : GET
+- Reqeust
 ```json
 {
 	"lang" : String
 }
 ```
-#### Response
+- Response
 ```json
 {
 	"message": String
@@ -79,24 +77,22 @@
 	]
 }
 ```
-#### Conditions
-- lang은 "kr" 혹은 "en"을 보낼 것
+- Conditions
+	- lang은 "kr" 혹은 "en"을 보낼 것
 
 
 == 메뉴 가져오기 API ==
 
-#### endpoint 
-- /category/menu
-#### method 
-- GET
-#### Reqeust
+- endpoint : /category/menu
+- method : GET
+- Reqeust
 ```json
 {
 	"category_name": String
 	"lang": String
 }
 ```
-#### Response
+- Response
 ```json
 {
 	"message": String
@@ -110,17 +106,15 @@
 	]
 }
 ```
-#### Conditions
-- lang은 "kr" 혹은 "en"을 보낼 것
+- Conditions
+	- lang은 "kr" 혹은 "en"을 보낼 것
 
 
 == 주문 내용 넣기 API ==
 
-#### Endpoint 
-- /order
-#### Method 
-- POST
-#### Reqeust
+- Endpoint : /order
+- Method : POST
+- Reqeust
 ```json
 {
 	"id": String,
@@ -141,6 +135,8 @@
 	"success": Boolean
 }
 ```
+- Conditions
+	- total_price는 0일 수 없음
 
 == 주문 기록 가져오기 API ==
 
