@@ -16,6 +16,15 @@ router.post('/', async (req, res) => {
         })
     }
 
+    if (totalPriceValue <= 0) {
+        console.log("Error Log: ", "InvalidPriceError")
+        res.send({
+            "message": "InvalidPriceError",
+            "success": false,
+            "data": []
+        })
+    }
+
     if (idValue.length > 10) {
         console.log("Error Log: ", "DataTooLongError")
         res.send({

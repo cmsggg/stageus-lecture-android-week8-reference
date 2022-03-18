@@ -14,6 +14,15 @@ router.get('/', async (req, res) => {
         })
     }
 
+    if (langValue != "kr" && langValue != "en") {
+        console.log("Error Log: ", "NotSupportedLanguage")
+        res.send({
+            "message": "NotSupportedLanguage",
+            "success": false,
+            "data": []
+        })
+    }
+
     const result = await dbControl(
         "SELECT * FROM android.category WHERE lang=$1",
         [langValue]
@@ -30,6 +39,15 @@ router.get('/menu', async (req, res) => {
         console.log("Error Log: ", "EmptyValueError")
         res.send({
             "message": "EmptyValueError",
+            "success": false,
+            "data": []
+        })
+    }
+
+    if (langValue != "kr" && langValue != "en") {
+        console.log("Error Log: ", "NotSupportedLanguage")
+        res.send({
+            "message": "NotSupportedLanguage",
             "success": false,
             "data": []
         })
