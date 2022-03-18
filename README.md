@@ -29,39 +29,46 @@ Port - 3000
 	"success": Boolean
 }
 ```
-### Conditions
+#### Conditions
 - id는 10자 제한
 - pw는 10자 제한
 - name은 10자 제한
 - contact는 11자 제한
 
 
-== 로그인 API ==
+## 로그인 API 
 
-○ Endpoint - /account/login
-○ Method - GET
-○ Reqeust
+#### Endpoint - /account/login
+#### Method - GET
+#### Reqeust
+```json
 {
 	"id": string,
 	"pw": string
 }
-○ Response
-result: 
+```
+#### Response
+```json
 {
 	"message": String
 	"success": Boolean	
 }
+```
 
+## 카테고리 가져오기 API
 
-== 카테고리 가져오기 API ==
-
-○ endpoint - /category
-○ method - GET
-○ Reqeust
+#### endpoint 
+- /category
+#### method 
+- GET
+#### Reqeust
+```json
 {
 	"lang" : String
 }
-○ Response
+```
+#### Response
+```json
 {
 	"message": String
 	"success": Boolean
@@ -71,20 +78,26 @@ result:
 		}
 	]
 }
-○ Conditions
+```
+#### Conditions
 - lang은 "kr" 혹은 "en"을 보낼 것
 
 
 == 메뉴 가져오기 API ==
 
-○ endpoint - /category/menu
-○ method - GET
-○ Reqeust
+#### endpoint 
+- /category/menu
+#### method 
+- GET
+#### Reqeust
+```json
 {
 	"category_name": String
 	"lang": String
 }
-○ Response
+```
+#### Response
+```json
 {
 	"message": String
 	"success": Boolean	
@@ -96,15 +109,19 @@ result:
 		}
 	]            
 }
-○ Conditions
+```
+#### Conditions
 - lang은 "kr" 혹은 "en"을 보낼 것
 
 
 == 주문 내용 넣기 API ==
 
-○ Endpoint - /order
-○ Method - POST
-○ Reqeust
+#### Endpoint 
+- /order
+#### Method 
+- POST
+#### Reqeust
+```json
 {
 	"id": String,
 	"order_list": List [
@@ -116,24 +133,29 @@ result:
 	],
 	"total_price": Int
 }
-○ Response
-result: 
+```
+#### Response
+```json
 {
 	"message": String
 	"success": Boolean	
 }
-
+```
 
 == 주문 기록 가져오기 API ==
 
-○ Endpoint - /order
-○ Method - GET
-○ Reqeust
+#### Endpoint 
+- /order
+#### Method 
+- GET
+#### Reqeust
+```json
 {
 	"id": String
 }
-○ Response
-result: 
+```
+#### Response
+```json
 {
 	"message": String
 	"success": Boolean	
@@ -146,5 +168,4 @@ result:
 	]
 	"total_price": Int
 }
-
-====================================
+```
