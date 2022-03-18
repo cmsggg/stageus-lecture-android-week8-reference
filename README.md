@@ -1,23 +1,25 @@
 # 서버 명세
 
-웹서버 구성 - Node.js & Exrpess
-통식 방식 - REST
-IP주소 - 3.35.214.92
-Port - 3000
+웹서버 구성 - Node.js & Exrpess  
+통식 방식 - REST  
+IP주소 - 3.35.214.92  
+Port - 3000  
 
 # API 명세
 
-== 회원가입 API ==
+### 회원가입 API
 
-○ Endpoint - /account
-○ Method - POST
-○ Reqeust
+○ Endpoint - /account  
+○ Method - POST  
+○ Reqeust  
+```json
 {
 	"id": String,
 	"pw": String,
 	"name": String,
 	"contact": String
 }
+```
 ○ Response
 {
 	"message": String
