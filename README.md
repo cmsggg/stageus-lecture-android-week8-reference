@@ -14,7 +14,7 @@
 #### Method 
 - POST  
 #### Reqeust  
-```json
+```xml
 {
 	"id": String,
 	"pw": String,
@@ -157,7 +157,7 @@
 }
 ```
 #### Response
-```object
+```json
 {
 	"message": String
 	"success": Boolean
