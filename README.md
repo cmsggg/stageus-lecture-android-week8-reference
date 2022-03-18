@@ -7,11 +7,11 @@ Port - 3000
 
 # API 명세
 
-### 회원가입 API
+## 회원가입 API
 
-○ Endpoint - /account  
-○ Method - POST  
-○ Reqeust  
+### Endpoint - /account  
+### Method - POST  
+### Reqeust  
 ```json
 {
 	"id": String,
@@ -20,12 +20,14 @@ Port - 3000
 	"contact": String
 }
 ```
-○ Response
+### Response
+```json
 {
 	"message": String
 	"success": Boolean
 }
-○ Conditions
+```
+### Conditions
 - id는 10자 제한
 - pw는 10자 제한
 - name은 10자 제한
