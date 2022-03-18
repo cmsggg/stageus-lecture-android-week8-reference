@@ -9,11 +9,9 @@
 
 ## 회원가입 API
 
-#### Endpoint 
-- /account  
-#### Method 
-- POST  
-#### Reqeust  
+- Endpoint : /account  
+- Method : POST  
+- Reqeust  
 ```json
 {
 	"id": String,
@@ -22,18 +20,18 @@
 	"contact": String
 }
 ```
-#### Response
+- Response
 ```json
 {
 	"message": String
 	"success": Boolean
 }
 ```
-#### Conditions
-- id는 10자 제한
-- pw는 10자 제한
-- name은 10자 제한
-- contact는 11자 제한
+- Conditions
+	- id는 10자 제한
+	- pw는 10자 제한
+	- name은 10자 제한
+	- contact는 11자 제한
 
 
 ## 로그인 API 
