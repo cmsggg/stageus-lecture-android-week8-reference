@@ -9,11 +9,11 @@ Port - 3000
 
 ## 회원가입 API
 
-### Endpoint 
+#### Endpoint 
 - /account  
-### Method 
+#### Method 
 - POST  
-### Reqeust  
+#### Reqeust  
 ```json
 {
 	"id": String,
@@ -22,7 +22,7 @@ Port - 3000
 	"contact": String
 }
 ```
-### Response
+#### Response
 ```json
 {
 	"message": String
