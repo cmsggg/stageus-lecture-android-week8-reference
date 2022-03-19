@@ -55,6 +55,28 @@
 - Conditions
 	- login 성공시 success는 true, 실패시 false
 
+
+## 아이디 중복체크 API 
+
+- Endpoint : /account/login
+- Method : GET
+- Reqeust
+```json
+{
+	"id": string
+}
+```
+- Response
+```json
+{
+	"message": String
+	"success": Boolean
+}
+```
+- Conditions
+	- 중복이면 success가 false, 사용 가능하면 true
+
+
 ## 카테고리 가져오기 API
 
 - endpoint : /category
