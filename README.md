@@ -58,7 +58,7 @@
 
 ## 아이디 중복체크 API 
 
-- Endpoint : /account/login
+- Endpoint : /account/overlap
 - Method : GET
 - Reqeust
 ```json
