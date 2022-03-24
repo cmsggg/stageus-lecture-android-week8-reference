@@ -176,12 +176,16 @@
 	"message": String
 	"success": Boolean
 	"data": List [
-		"order_list": {
-			"name": String,
-			"count:" Int,
-			"sum_price": Int
-		},
-		"total_price": Int
+		{
+			"order_list": List [
+				{
+					"name": String,
+					"count:" Int,
+					"sum_price": Int
+				},
+			],
+			"total_price": Int
+		}
 	]
 }
 ```
